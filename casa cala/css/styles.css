@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  /* Header-Nav */
+  .header {
+    background-image: url("../images/cover.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  .header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 88px;
+    height: 80px;
+  }
+  .header .nav a {
+    font-family: "Lexend", sans-serif;
+    color: #201F1F;
+    font-size: 12px;
+  }
+  .header .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .cover .cover-logo {
+    margin-top: 112px;
+    margin-bottom: 40px;
+  }
+  .header .cover .cover-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: white;
+    gap: 16px;
+  }
+  .header .cover .cover-title .cover-slogan {
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    color: white;
+    letter-spacing: 0.025em;
+  }
+  
+  /* Fin de Header-Nav */
+  /* Info*/
+  .container-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .container-info .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+  }
+  .container-info .info .info-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-info .info .info-text .info-text-title {
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #201F1F;
+    margin-bottom: 28px;
+  }
+  .container-info .info .info-text .info-text-p {
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #201F1F;
+    text-align: justify;
+  }
+  .container-info .info .info-text .info-text-p span {
+    display: flex;
+    margin: 18px 0;
+  }
+  .container-info .info-image {
+    width: 50%;
+    height: 100vh;
+    background-image: url("../images/info_image.png");
+    background-size: cover;
+  }
+  
+  /* Fin de Info*/
+  /* Proyecto */
+  .container-proyecto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/proyecto.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+  }
+  
+  /*Fin de Proyecto */
+  /* Galeria */
+  .container-galery {
+    padding: 10px;
+  }
+  
+  .gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+  .gallery .gallery__image {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .gallery:hover .gallery__image {
+    filter: grayscale(1);
+  }
+  .gallery__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  .gallery__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 75%;
+  }
+  .gallery__link {
+    margin: 2px;
+    overflow: hidden;
+  }
+  .gallery__link:hover .gallery__image {
+    filter: grayscale(0);
+  }
+  .gallery__link:hover .gallery__caption {
+    opacity: 1;
+  }
+  .gallery__thumb {
+    position: relative;
+  }
+  .gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .gallery__image:hover {
+    transform: scale(1.1);
+  }
+  .gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+  }
+  
+  /* Fin de Galeria */
+  /* Etapa */
+  .container-phase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container-phase .phase-title {
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #201F1F;
+    margin-bottom: 100px;
+  }
+  .container-phase .container-phase-status {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-phase .container-phase-status .phase-status {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #201F1F;
+    text-align: center;
+    gap: 25px;
+  }
+  
+  /* Fin de Etapa */
+  /* Equipo */
+  .team-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .team-section .team-title {
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #201F1F;
+    margin-bottom: 50px;
+  }
+  .team-section .container-team {
+    display: flex;
+    flex-direction: row;
+  }
+  .team-section .container-team .team {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .team-section .container-team .team .team-name {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #201F1F;
+    margin-top: 35px;
+    padding: 10px 25px;
+  }
+  .team-section .container-team .team .team-pos {
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #201F1F;
+    padding: 10px 25px;
+  }
+  
+  /* Fin de Equipo */
+  /* Galeria */
+  .container-articles {
+    background-color: #D7EDAC;
+  }
+  .container-articles .pendiente {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #201F1F;
+  }
+  
+  /* Fin de Galeria */
+  /* Formulario */
+  .container-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #201F1F;
+  }
+  .container-form .form {
+    width: 612px;
+    text-align: center;
+  }
+  .container-form .form .form-title {
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 56px;
+  }
+  .container-form .form .input, .container-form .form .input-msg {
+    margin-bottom: 24px;
+    width: 612px;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 15px;
+  }
+  .container-form .form .input-msg {
+    height: 166px;
+    resize: none;
+  }
+  .container-form .form .btn-send {
+    margin-top: 24px;
+    width: 196px;
+    height: 64px;
+    background: #8ABA5A;
+    border: none;
+    border-radius: 10px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* Fin de Formulario */
+  /* Footer */
+  .footer {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #201F1F;
+  }
+  .footer .footer-img {
+    margin-top: 150px;
+    margin-bottom: 24px;
+  }
+  .footer .contact-info {
+    width: 250px;
+    background-color: #8ABA5A;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin: 12px 0;
+  }/*# sourceMappingURL=styles.css.map */
